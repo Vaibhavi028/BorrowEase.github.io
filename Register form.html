@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="font16.css">
+</head>
+<link rel="stylesheet" href="CSS.css.css">
+<link rel="stylesheet" href="Font.css">
+<link rel="stylesheet" href="Font%20Awesome.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body {
+
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+* {
+
+box-sizing: border-box;
+
+}
+
+
+.container {
+
+padding: 16px;
+
+background-color: white;
+
+}
+
+input[type=email], input[type=password] {
+
+width: 100%;
+
+padding: 15px;
+
+margin: 5px 0 22px 0;
+
+display: inline-block;
+
+border: none;
+
+background: #f1f1f1;
+
+}
+
+input[type=email]:focus, input[type=password]:focus {
+
+background-color: #ddd;
+
+outline: none;
+
+}
+
+input[type=text], input[type=password] {
+
+width: 100%;
+
+padding: 15px;
+
+margin: 5px 0 22px 0;
+
+display: inline-block;
+
+border: none;
+
+background: #f1f1f1;
+
+}
+
+input[type=text]:focus, input[type=password]:focus {
+
+background-color: #ddd;
+
+outline: none;
+
+}
+
+hr {
+
+border: 1px solid #f1f1f1;
+
+margin-bottom: 25px;
+
+}
+
+.registerbtn {
+
+background-color: #4CAF50;
+
+color: white;
+
+padding: 16px 20px;
+
+margin: 8px 0;
+
+border: none;
+
+cursor: pointer;
+
+width: 100%;
+
+opacity: 0.9;
+
+}
+
+.registerbtn:hover {
+
+opacity: 1;
+
+}
+
+
+a {
+
+color: dodgerblue;
+
+}
+
+.signin {
+
+background-color: #f1f1f1;
+
+text-align: center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="About%20us.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <a href="Login%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+   <a href="Register%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNUP</a>
+ <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <img src="button.jpeg" height="15" width="15"></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Products.html" class="w3-bar-item w3-button">Products</a>
+        <a href="Details.html" class="w3-bar-item w3-button">Details</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src="search.jpeg" height="20" width="20"></a>
+  </div>
+</div>
+<br>
+<h1><center><U><font size="7">Register</font></u></h1>
+
+<form action="Home%20Page.html">
+
+<div class="container">
+
+
+<p>Please fill in this form to create an account.</p>
+
+
+
+<label for="Uname"><b>Username</b></label>
+
+<input type="text" placeholder="Enter Username" name="uname" required>
+
+<label for="email"><b>Email</b></label>
+
+<input type="email" placeholder="Enter Email" name="email" required>
+
+<label for="psw"><b>Password</b></label>
+
+<input type="password" placeholder="Enter Password" name="psw" required>
+
+<label for="psw-repeat"><b>Repeat Password</b></label>
+
+<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+
+
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+<button type="submit" class="registerbtn">Register</button>
+
+</div>
+
+
+</form>
+
+</body>
+
+</html>

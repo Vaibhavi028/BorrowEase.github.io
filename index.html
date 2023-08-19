@@ -1,0 +1,122 @@
+<html lang="en">
+<head><title>The Quiz</title></head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS.css.css">
+<link rel="stylesheet" href="Font.css">
+<link rel="stylesheet" href="Font%20Awesome.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="About%20us.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <a href="Login%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+   <a href="Register%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNUP</a>
+ <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <img src="button.jpeg" height="15" width="15"></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Products.html" class="w3-bar-item w3-button">Products</a>
+        <a href="Details.html" class="w3-bar-item w3-button">Details</a>
+      </div>
+    </div>
+  <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src="search.jpeg" height="15" width="15"></a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img1.jpg" style="width:1600; height:750">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <font color="Black"><h3>BorrowEase</h3>
+      <p><b>Snap it, Rent it!</b></p></font>     
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img2.png" style="width:1600; height:750">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <font color="Black"><h3>Everything you need</h3>
+      <p><b>Click a pic, upload it, rent it</b></p></font>      
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="img3.jpeg" style="width:1600; height:750">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <font color="White"><h3>BorrowEase</h3>
+      <p><b>Snap it, Rent it!</b></p></font>    
+    </div>
+
+  </div>
+<BR>
+<center><h2>BorrowEase</h2></center>
+<div class="w3-container w3-content w3-center"  style="max-width:1300px" id="band">
+<p class="w3-justify">Click a picture, upload it and earn money by renting it</p>
+<p class="w3-justify">Even you can borrow something</p>
+</div>
+<br>
+
+<br><br><br><br><br><br><br><br><br>
+
+<font size="5"><b><u>Enter your reviews here</b></u></font><br><br><br>
+<form>
+Comment <br><textarea rows="5" cols="30" wrap"phsical" name="feedback"></textarea><br>
+<br>Name  <br> <textarea rows="1" cols="30" wrap"phsical" name="feedback"></textarea><br>
+<br>Email <br>  <textarea rows="1" cols="30" wrap"phsical" name="feedback"></textarea><br>
+<br>Reg no.<br> <textarea rows="1" cols="30" wrap"phsical" name="feedback"></textarea><br>
+<br>
+<Input type="submit" value="Submit" style="background-color: lightred; height: 40px; width: 80px">			
+</form>
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+   <p class="w3-medium">Created by <a href="About%20us.html">Group name</a></p>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+</body>
+</html>
