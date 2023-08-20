@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <p>1.Uploaded image and description is correct.</p>
+        <p>2.For expensive category if the item got damaged the user is responsible to repair it and submit,if the damage is extreme user should pay for the product</p>   
+        <p>3.Proper pre rental inspection is upto user and owner.</p>
+        <p>4.Organisation is not responsible for the conflicts between user and the owner about the product.</p>
+        <label>
+            <input type="checkbox" id="agreeCheckbox">
+            I have read and agree to the terms and conditions.
+        </label>
+
+        <button id="agreeButton" disabled>Agree</button>
+    </div>
+
+    <script>
+        const agreeCheckbox = document.getElementById('agreeCheckbox');
+        const agreeButton = document.getElementById('agreeButton');
+
+        agreeCheckbox.addEventListener('change', () => {
+            agreeButton.disabled = !agreeCheckbox.checked;
+        });
+
+        agreeButton.addEventListener('click', () => {
+            // Handle what should happen when the user agrees (e.g., redirect, show a message, etc.)
+            alert('Thank you for agreeing to the terms and conditions.');
+        });
+    </script>
+</body>
+</html>

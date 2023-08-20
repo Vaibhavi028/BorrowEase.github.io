@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="font16.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<link rel="stylesheet" href="CSS.css.css">
+<link rel="stylesheet" href="Font.css">
+<link rel="stylesheet" href="Font%20Awesome.css">
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="About%20us.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+    <a href="Login%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+   <a href="Register%20form.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SIGNUP</a>
+ <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <img src="button.jpeg" height="15" width="15"></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="Products.html" class="w3-bar-item w3-button">Products</a>
+        <a href="Details.html" class="w3-bar-item w3-button">Upload</a>
+    </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src="search.jpeg" height="20" width="20"></a>
+  </div>
+</div>
+<br>
+<h1><center><U><font size="7">Login Form</font></u></h1>
+
+<form action="Home%20Page.html">
+  
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+   <button type="submit"  onclick="return check(this.form)" value="Login">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+<script language="javascript">
+function check(form)
+{
+
+
+if((form.uname.value == "Vaibhavi" && form.psw.value == "Vaibhavi")||(form.uname.value == "Kavya" && form.psw.value == "Kavya")||(form.uname.value == "Harish" && form.psw.value == "Harish")||(form.uname.value == "Sarma" && form.psw.value == "Sarma")||(form.uname.value == "Keshav" && form.psw.value == "Keshav"))
+
+{
+	alert("Logged in successfully")
+  return true;
+                 
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+
+</body>
+
+</html>
